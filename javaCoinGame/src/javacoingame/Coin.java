@@ -16,7 +16,7 @@ public class Coin {
     
     public Coin(){
         Random rand = new Random();
-        int coin = rand.nextInt(1);
+        int coin = rand.nextInt(2);
         
         if (coin == 1){
             this.sideUp = CoinFace.HEADS;
@@ -28,7 +28,7 @@ public class Coin {
     
     public void tossCoin(){
         Random rand = new Random();
-        int coin = rand.nextInt(1);
+        int coin = rand.nextInt(2);
         
         if (coin == 1){
             this.sideUp = CoinFace.HEADS;
@@ -44,7 +44,7 @@ public class Coin {
     }
      
     public String toSTring(){
-        
-        return " " + sideUp;
+        String str = (" " + sideUp);
+        return str;
     }
 }
