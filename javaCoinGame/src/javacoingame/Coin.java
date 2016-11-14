@@ -43,8 +43,4 @@ public class Coin {
         return sideUp;
     }
      
-    public String toSTring(){
-        String str = (" " + sideUp);
-        return str;
-    }
 }

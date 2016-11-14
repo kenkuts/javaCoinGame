@@ -20,11 +20,11 @@ public class JavaCoinGame {
         int tails = 0;
         Coin toss = new Coin();
         
-        System.out.println("The coin is initially facing" + toss.getSideUp());
+        System.out.println("The coin is initially facing " + toss.getSideUp());
         
         System.out.println("Let's start the game!!!");
         
-        for (int r = 1; r <= 21; r++)
+        for (int r = 1; r <= 20; r++)
         {
             System.out.println("This is coin toss # " + r);
             toss.tossCoin();
