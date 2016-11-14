@@ -12,9 +12,13 @@ import java.util.Random;
  */
 public class Coin {
     
+    private Player stats;
     private CoinFace sideUp;
     
-    public Coin(){
+    public Coin(Player stats){
+        
+        this.stats = new Player(stats);
+        
         Random rand = new Random();
         int coin = rand.nextInt(2);
         
@@ -24,6 +28,7 @@ public class Coin {
         else {
             this.sideUp = CoinFace.TAILS;
         }
+      
     }
     
     public void tossCoin(){
@@ -42,5 +47,9 @@ public class Coin {
        
         return sideUp;
     }
-     
+    
+    public Player getPlayerInfo(){
+        
+        return new Player(stats);
+    }
 }
